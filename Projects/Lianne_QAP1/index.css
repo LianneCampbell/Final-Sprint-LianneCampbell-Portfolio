@@ -1,0 +1,119 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: content-box;
+}
+
+body {
+    background-image: linear-gradient(
+     rgba(23, 35, 196, 0.808),
+     rgba(109, 230, 248, 0.877),
+     rgba(69, 196, 23, 0.808),
+     rgba(255, 251, 0, 0.808),
+     rgba(255, 162, 0, 0.808),
+     rgba(255, 0, 0, 0.808))
+}
+
+.titlebox {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    background-color: white;
+    padding: 8px;
+    border: solid black 1px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    }
+
+.mainbox {
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    align-items: center;
+    background-color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border: solid black 1px;
+    padding: 80px;
+  }
+
+  .menubox {
+    display: flex;
+    justify-content: center;
+    align-content: space-evenly;
+    height: 30px;
+    background-color: white;
+    padding: 8px;
+    text-align: center;
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 20px;
+    border: solid black 1px;
+  }
+  
+  nav a:link {
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Verdana;
+  }
+  
+  nav a:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana;
+  }
+  
+  nav a:hover {
+    color: red;
+    background-color: black;
+    font-family: Verdana;
+  }
+
+  .mainaboutpic {
+    display: flex;
+    justify-content: center;
+    flex-shrink: 1;
+    width: 10px;
+    height:10px;
+    background-color: white;
+    margin: 10px;
+    text-align: center;
+   
+  }
+
+  .firstletter {
+    font-size: 75px;
+    line-height: 60px;
+    float: left;
+    padding-top: 4px;
+    padding-right: 8px;
+  }
+
+ .olist {
+    font-size: 24px; 
+ }
+
+ main a:link {
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+    font-family: Verdana;
+  }
+  
+ main a:visited {
+    color: black;
+    text-decoration: none;
+    font-family: Verdana;
+  }
+  
+ main a:hover {
+    color: red;
+    background-color: black;
+    font-family: Verdana;
+  }

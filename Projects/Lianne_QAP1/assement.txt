@@ -1,0 +1,14 @@
+1. How many hours did it take you to complete this assessment? (Please keep try to keep track of how many hours you have spent working on each individual part of this assessment as best you can - an estimation is fine; we just want a rough idea.)
+This assignment roughly took about 5 Hours, with many 10-15 minute intervals due to a needy newborn baby requiring many breaks.
+
+2. What online resources you have used? (My lectures, YouTube, Stack overflow etc.)
+Online resources used included your lectures, youtube, wikipedia, other nature websites included, HTML validator.
+
+3. Did you need to ask any of your friends in solving the problems. (If yes, please mention name of the friend. They must be amongst your class fellows.)
+This project was completed alone.
+
+4. Did you need to ask questions to any of your instructors? If so, how many questions did you ask (or how many help sessions did you require)?
+The lectures you provided were enough to complete this project.
+
+5. Rate (subjectively) the difficulty of Making this all! from your own perspective, and whether you feel confident that you can solve a similar but different problem requiring some of the same techniques in the future now that you’ve completed this one.
+I enjoyed this project, I did not find it to difficult and I found the HTML validator to be a good tool to use.

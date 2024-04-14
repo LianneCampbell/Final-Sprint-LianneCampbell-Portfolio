@@ -1,0 +1,80 @@
+<!-- Winter Sprint 1 2024
+Figma, HTML, CSS, Javascript
+Created by: Lianne Campbell & Stephen Barnes
+Teacher: Noman Atique
+Date: 2/24/2024
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav> <!-- Navigation Links -->
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./menu.html">Our Products</a>
+        <a href="./shopnow.html">Shop Now</a>      
+    </nav>
+
+    <div class="info-box center"> <!-- Cafe Logo -->
+<img src="../Photos/coffeecupcafe.jpg" class="logo">
+    </div>
+
+    <div class="navcontainer"> <!-- Images in navigation bar with border radius -->
+    <div class="navcircle"><img src="../Photos/navhomenathan-dumlao-tA90pRfL2gM-unsplash.jpg" class="navthumb"></div>
+    <div class="navcircle"><img src="../Photos/nav1nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" class="navthumb"></div>
+    <div class="navcircle"><img src="../Photos/nav2nathan-dumlao-pMW4jzELQCw-unsplash.jpg" class="navthumb"></div>
+    <div class="navcircle"><img src="../Photos/nav3nathan-dumlao-ikU3J1nr52w-unsplash.jpg" class="navthumb"></div>
+</div>
+
+<div class="spacebox"><p><br><br><br><br></p></div> <!-- A box to provide spacing --> 
+
+<div class="mainbox"> <!-- A flexbox containing 5 boxes with each menu item available -->
+    <div class="menuitem"><p><b>Americano</b></p><img src="../Photos/americanomatheus-bardemaker-wn6CTPy5E6Q-unsplash.jpg" class="menupic"><p>Lightened espresso</p></div>
+    <div class="menuitem"><p><b>Orange Pekoe Tea</b></p><img src="../Photos/rumman-amin-bJzJH85Kp7g-unsplash.jpg" class="menupic"><p>A particular type of black tea.</p></div>
+    <div class="menuitem"><p><b>Chai Tea Latte</b></p><img src="../Photos/chainuttawut-anek-vgNU1ujE8Mk-unsplash.jpg" class="menupic"><p>Steamed milk mixed with black tea that has been infused with spices</p></div>
+    <div class="menuitem"><p><b>Oat Milk Latte</b></p><img src="../Photos/oatmilknathan-dumlao-llib1mkWXlE-unsplash.jpg" class="menupic"><p>Your classic latte with a dairy-free alternative</p></div>
+    <div class="menuitem"><p><b>Caramel Macchiato</b></p><img src="../Photos/caramelfrankie-F_EfOSXh0sI-unsplash.jpg" class="menupic"><p>Served hot or iced made with milk, vanilla syrup, and topped with espresso and caramel sauce</p></div>
+</div>
+    <div class="mainbox"> <!-- A flexbox containing 5 boxes with each menu item available - Continued -->
+        <div class="menuitem"><p><b>Breakfast Toast</b></p><img src="../Photos/ben-kolde-rQsYZnCRU00-unsplash.jpg" class="menupic"><p>Avocado Toast topped with Fried Egg and Bacon</p></div>
+        <div class="menuitem"><p><b>Macaroons</b></p><img src="../Photos/macaroonsgoodeats-yqr-VOJ1epkzFmM-unsplash.jpg" class="menupic"><p>Assortment of light flavorful Macaroons</p></div>
+        <div class="menuitem"><p><b>Light Coffee Beans</b></p><img src="../Photos/wholebeansnathan-dumlao-PX1IrPsimHE-unsplash.jpg" class="menupic"><p>Sweet, fruit tanginess & a subtle floral aroma</p></div>
+        <div class="menuitem"><p><b>Medium Coffee Beans</b></p><img src="../Photos/wholebeansnathan-dumlao-PX1IrPsimHE-unsplash.jpg" class="menupic"><p>Mimics the taste from the roasting process, losing some of the bright floral flavors </p></div>
+        <div class="menuitem"><p><b>Dark Roast Coffee Beans</b></p><img src="../Photos/wholebeansnathan-dumlao-PX1IrPsimHE-unsplash.jpg" class="menupic"><p>Robust & full bodied, with a bold & smoky taste</p></div>
+    </div>
+
+    <footer>
+        <div class="footerbox">
+        <h3 style="font-family:verdana"> <!-- A link to bring you back to the top of the page -->
+            <a href="#Top">Top of Page</a><br>
+         </h3> 
+        </div>
+        <div class="footerbox"><img src="../Photos/coffeecupcafe1.jpg"></div> <!-- Footer Logo -->
+        <div class="footerbox"><p style="font-family:verdana">Copyright© Stephen Barnes & Lianne Campbell 2024</p></div>
+    </footer>
+    
+    <script>
+        // JavaScript function to highlight menu items on hover
+        document.addEventListener('DOMContentLoaded', function () {
+            var menuItems = document.querySelectorAll('.menuitem');
+     
+            menuItems.forEach(function (item) {
+                item.addEventListener('mouseover', function () {
+                    item.style.borderColor = '#f0f0f0';
+                });
+     
+                item.addEventListener('mouseout', function () {
+                    item.style.borderColor = '';
+                });
+            });
+        });
+    </script>
+</body>
+</html>

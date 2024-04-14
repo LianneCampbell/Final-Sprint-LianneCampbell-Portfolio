@@ -1,0 +1,203 @@
+<!-- Winter Sprint 1 2024
+Figma, HTML, CSS, Javascript
+Created by: Lianne Campbell & Stephen Barnes
+Teacher: Noman Atique
+Date: 2/24/2024
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Now</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav> <!-- Navigation Links -->
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./menu.html">Our Products</a>
+        <a href="./shopnow.html">Shop Now</a>      
+    </nav>
+
+    <div class="info-box center"> <!-- Cafe Logo -->
+        <img src="../Photos/coffeecupcafe.jpg" class="logo">
+     </div>
+
+     <div class="navcontainer"> <!-- Images in navigation bar with border radius -->
+        <div class="navcircle"><img src="../Photos/navhomenathan-dumlao-tA90pRfL2gM-unsplash.jpg" class="navthumb"></div>
+        <div class="navcircle"><img src="../Photos/nav1nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" class="navthumb"></div>
+        <div class="navcircle"><img src="../Photos/nav2nathan-dumlao-pMW4jzELQCw-unsplash.jpg" class="navthumb"></div>
+        <div class="navcircle"><img src="../Photos/nav3nathan-dumlao-ikU3J1nr52w-unsplash.jpg" class="navthumb"></div>
+    </div>
+     
+    <div class="spacebox"><p><br><br><br></p></div> <!-- A box to provide spacing -->
+      
+     <br>
+     <br>
+     <br>
+
+
+     <form action="/action_page.php" method="post">
+        <div class="menu-container">
+            <h3><i>Menu</i></h3>
+            <div class="menu-items">
+                <div class="menu-item"> <!-- Quanity controls for shopping for each item -->
+                    <input type="checkbox" id="option1" name="option1" value="Chai tea latte">
+                    <label for="option1"> Chai tea latte </label>
+                    <button onclick="updateQuantity('quantity1', 'displayQuantity1', 'increment')">+</button>
+                    <span id="displayQuantity1"> 1</span>
+                    <button onclick="updateQuantity('quantity1', 'displayQuantity1', 'decrement')">-</button>
+                    <input type="hidden" id="quantity1" name="quantity1" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option2" name="option2" value="Caramel macchiato">
+                    <label for="option2"> Caramel Macchiato</label>
+                    <button onclick="updateQuantity('quantity2', 'displayQuantity2', 'increment')">+</button>
+                    <span id="displayQuantity2"> 1</span>
+                    <button onclick="updateQuantity('quantity2', 'displayQuantity2', 'decrement')">-</button>
+                    <input type="hidden" id="quantity2" name="quantity2" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option3" name="option3" value="Orange pekoe tea">
+                    <label for="option3"> Orange Pekoe Tea </label>
+                    <button onclick="updateQuantity('quantity3', 'displayQuantity3', 'increment')">+</button>
+                    <span id="displayQuantity3"> 1</span>
+                    <button onclick="updateQuantity('quantity3', 'displayQuantity3', 'decrement')">-</button>
+                    <input type="hidden" id="quantity3" name="quantity3" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option4" name="option4" value="Americano">
+                    <label for="option4"> Americano </label>
+                    <button onclick="updateQuantity('quantity4', 'displayQuantity4', 'increment')">+</button>
+                    <span id="displayQuantity4"> 1</span>
+                    <button onclick="updateQuantity('quantity4', 'displayQuantity4', 'decrement')">-</button>
+                    <input type="hidden" id="quantity4" name="quantity4" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option5" name="option5" value="Oat milk latte">
+                    <label for="option5"> Oat Milk Latte </label>
+                    <button onclick="updateQuantity('quantity5', 'displayQuantity5', 'increment')">+</button>
+                    <span id="displayQuantity5"> 1</span>
+                    <button onclick="updateQuantity('quantity5', 'displayQuantity5', 'decrement')">-</button>
+                    <input type="hidden" id="quantity5" name="quantity5" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option6" name="option6" value="Breakfast Toast">
+                    <label for="option6">Breakfast Toast </label>
+                    <button onclick="updateQuantity('quantity6', 'displayQuantity6', 'increment')">+</button>
+                    <span id="displayQuantity6"> 1</span>
+                    <button onclick="updateQuantity('quantity6', 'displayQuantity6', 'decrement')">-</button>
+                    <input type="hidden" id="quantity6" name="quantity6" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option7" name="option7" value="Macaroons">
+                    <label for="option7"> Macaroons </label>
+                    <button onclick="updateQuantity('quantity7', 'displayQuantity7', 'increment')">+</button>
+                    <span id="displayQuantity7"> 1</span>
+                    <button onclick="updateQuantity('quantity7', 'displayQuantity7', 'decremen1')">-</button>
+                    <input type="hidden" id="quantity7" name="quantity7" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option8" name="option8" value="Light Roast Coffee Beans">
+                    <label for="option8">  Light Roast Coffee Beans </label>
+                    <button onclick="updateQuantity('quantity8', 'displayQuantity8', 'increment')">+</button>
+                    <span id="displayQuantity8"> 1</span>
+                    <button onclick="updateQuantity('quantity8', 'displayQuantity8', 'decrement')">-</button>
+                    <input type="hidden" id="quantity8" name="quantity8" value="1">
+                </div>
+ 
+                <div class="menu-item">
+                    <input type="checkbox" id="option9" name="option9" value="Medium Roast Coffee Beans">
+                    <label for="option9">  Medium Roast Coffee Beans </label>
+                    <button onclick="updateQuantity('quantity9', 'displayQuantity9', 'increment')">+</button>
+                    <span id="displayQuantity9"> 1</span>
+                    <button onclick="updateQuantity('quantity9', 'displayQuantity9', 'decrement')">-</button>
+                    <input type="hidden" id="quantity9" name="quantity9" value="1">
+                </div>
+               
+                <div class="menu-item">
+                    <input type="checkbox" id="option10" name="option10" value="Dark Roast Coffee Beans">
+                    <label for="option10">  Dark Roast Coffee Beans </label>
+                    <button onclick="updateQuantity('quantity10', 'displayQuantity10', 'increment')">+</button>
+                    <span id="displayQuantity10"> 1</span>
+                    <button onclick="updateQuantity('quantity10', 'displayQuantity10', 'decrement')">-</button>
+                    <input type="hidden" id="quantity10" name="quantity10" value="1">
+                </div>
+            </div>
+
+                <br>
+                <br>
+               
+                <h3><i>Payment Details</i></h3> <!-- Payment Details -->
+                <form action="/submit_payment.php" method="post">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="address">Address:</label>
+                    <textarea id="address" name="address" required></textarea>
+            
+                    <label for="cardNumber">Card Number:</label>
+                    <input type="text" id="cardNumber" name="cardNumber" pattern="[0-9]{16}" required>
+                    <!-- The pattern attribute ensures the input contains 16 digits -->
+            
+                    <label for="expiryDate">Expiry Date:</label>
+                    <input type="text" id="expiryDate" name="expiryDate" pattern="(0[1-9]|1[0-2])\/\d{2}" placeholder="MM/YY" required>
+                    <!-- The pattern attribute ensures the input follows MM/YY format -->
+                </form>
+            
+                <div class="submit-section"> <!-- Check out button/Add to cart -->
+                    <input type="submit" value="Add to Cart">
+                </div>            
+            </div>
+
+        </div>
+       
+    </form>
+ 
+    <script> // Javascript to update quanity with + or - 
+        function updateQuantity(quantityId, displayId, action) {
+            var quantityInput = document.getElementById(quantityId);
+            var displaySpan = document.getElementById(displayId);
+ 
+            if (action === 'increment') {
+                quantityInput.value++;
+            } else if (action === 'decrement' && quantityInput.value > 1) {
+                quantityInput.value--;
+            }
+ 
+            displaySpan.textContent = quantityInput.value;
+        }
+    </script>
+       
+    </form>
+    <div class="mainbox"> <!-- Images -->
+    <img src="../Photos/eiliv-aceron-rvpt2VVm_H0-unsplash.jpg" class="mainthumb1" alt="Chai tea latte">
+    <img src="../Photos/matheus-bardemaker-wn6CTPy5E6Q-unsplash.jpg" class="mainthumb1" alt="Image Description">
+    <img src="../Photos/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" class="mainthumb1" alt="iuqehfuow">
+</div>
+<!-- Box to provide spacing with message -->
+<div class="spacebox2"><p>Thank you for shopping with us!</p><br></div>
+<div class="spacebox2"><img src="../Photos/shopping-cart_8170696.png" width="200"></div>
+    <footer>
+        <div class="footerbox">
+        <h3 style="font-family:verdana">
+            <a href="#Top">Top of Page</a><br> <!-- A link to bring you back to the top of the page -->
+         </h3>
+        </div>
+        <div class="footerbox"><img src="../Photos/coffeecupcafe1.jpg"></div> <!-- Footer Logo -->
+        <div class="footerbox"><p style="font-family:verdana">Copyright© Stephen Barnes & Lianne Campbell 2024</p></div>
+    </footer>
+         
+</body>
+</html>
+

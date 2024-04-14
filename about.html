@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External stylesheet links -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="bodyother"></div>
+    <!-- Navigation Links -->
+    <nav> 
+        <a href="./index.html" class="bungee-spice-regular">Home</a>
+        <a href="./projects.html" class="bungee-spice-regular">Projects</a>   
+        <a href="./about.html" class="bungee-spice-regular">About Me</a> 
+    </nav>
+    <main>
+        <div class="mainbox3">
+            <!-- Section for displaying About Me heading -->
+            <h1>About Me</h1> <br/>
+        </div>
+        <div class="mainbox2">
+            <!-- Section for displaying About Me content -->
+            <p>I am an inspiring Software Development student, who is currently studying at Keyin College. <br/>
+            I was born November 17, 1992 in Surrey, BC and am currently living and working in St. Johns, Newfoundland.
+            <br/> My hobbies include coding, video games, creating art (oil painting, mural painting, charcoal), photography, horseback riding.</p>
+            <div class="image-container" id="image-container"></div> <!-- Container for rotating images -->
+        </div>
+        <div class="mainbox3">
+            <!-- Section for displaying LinkedIn link -->
+            <p>If you would like to view a full overview of my profile, please visit my LinkedIn link!</p>
+            <button><a href="https://www.linkedin.com/in/lianne-campbell-62b46022b/"><b>Link to LinkedIn</b></a></button>
+        </div>
+        <script>
+            // Define an array of image URLs
+            const imageUrls = [
+                './Pictures/1642960281813.jpg',
+                './Pictures/1642960913078.jpg',
+                './Pictures/1642960939650.jpg',
+                './Pictures/1642961231162.jpg',
+                './Pictures/1642962326552.jpg',
+            ];
+        
+            // Get the image container
+            const imageContainer = document.querySelector('.image-container');
+        
+            let currentIndex = 0;
+        
+            // Function to change the image every 3 minutes
+            function changeImage() {
+                // Update the source of the image to the next image URL
+                imageContainer.innerHTML = `<img src="${imageUrls[currentIndex]}" alt="Image ${currentIndex + 1} class="image-container">`;
+        
+                // Increment the index, reset to 0 if it exceeds the array length
+                currentIndex = (currentIndex + 1) % imageUrls.length;
+            }
+        
+            // Initially, change the image
+            changeImage();
+        
+            // Set an interval to change the image every 4000 milliseconds
+            setInterval(changeImage, 4000);
+        </script>
+    </main>
+    <footer>
+        <!-- Footer with Easter Egg hint and signature -->
+        <p class="bungee-spice-regular">Find the hidden Easter Egg! Click around the pages to find the surprise.</p>
+        <p class="footsignature">&copy; Lianne Campbell 2024</p>
+    </footer>
+</body>
+</html>

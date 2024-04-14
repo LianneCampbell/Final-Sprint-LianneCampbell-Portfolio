@@ -1,0 +1,101 @@
+<!-- Winter Sprint 1 2024
+Figma, HTML, CSS, Javascript
+Created by: Lianne Campbell & Stephen Barnes
+Teacher: Noman Atique
+Date: 2/24/2024
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Cup Cafe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav> <!-- Navigation Links -->
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About Us</a>
+        <a href="./menu.html">Our Products</a>
+        <a href="./shopnow.html">Shop Now</a>      
+    </nav>
+
+    <div class="info-box center"> <!-- Cafe Logo -->
+        <img src="../Photos/coffeecupcafe.jpg" class="logo">
+            </div>
+
+    <div class="navcontainer"> <!-- Images in navigation bar with border radius -->
+    <div class="navcircle"><img src="../Photos/navhomenathan-dumlao-tA90pRfL2gM-unsplash.jpg" class="navthumb"></div>
+    <div class="navcircle"><img src="../Photos/nav1nathan-dumlao-c2Y16tC3yO8-unsplash.jpg" class="navthumb"></div>
+    <div class="navcircle"><img src="../Photos/nav2nathan-dumlao-pMW4jzELQCw-unsplash.jpg" class="navthumb"></div>
+    <div class="navcircle"><img src="../Photos/nav3nathan-dumlao-ikU3J1nr52w-unsplash.jpg" class="navthumb"></div>
+</div>
+
+<div class="spacebox"><p><br><br><br><br></p></div> <!-- A box to provide spacing -->
+
+<div class="mainbox"> <!-- Images on mainpage with border radius -->
+    <img src="../Photos/main1nathan-dumlao-6VhPY27jdps-unsplash.jpg" class="mainthumb1">
+    <img src="../Photos/nathan-dumlao-Y3AqmbmtLQI-unsplash.jpg" class="mainthumb1">
+    <img src="../Photos/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg" class="mainthumb1">
+    <img src="../Photos/nathan-dumlao-z3em1GBRhvY-unsplash.jpg" class="mainthumb2">
+    <img src="../Photos/nathan-dumlao-zUNs99PGDg0-unsplash.jpg" class="mainthumb1">
+    </div>
+
+    <div class="cont-title left"><h3>Hours of operation</h3></div>
+    <div class="cont-title right">
+       <h3> Contact Information</h3>
+       </div>
+
+       <div class="spacebox"><h3>Customer Comments</h3></div> <!-- Comments Title-->
+
+           <div class="cont-info left"> <!-- Hours of operation, with spaces to line up hours -->
+            <p><b>Monday</b>   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8am - 10pm<br>
+               <b>Tuesday</b>  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8am - 10pm <br>
+               <b>Wednesday</b>  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;8am - 10pm<br>
+               <b>Thursday</b> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 8am - 10pm<br>
+               <b>Friday</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9am - 11pm<br>
+               <b>Saturday</b>  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;9am - 11pm<br>
+               <b>Sunday</b> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 9am - 6pm<br>
+               <br>
+             <i>Holidays may be subject to close!</i></p>
+                 </div>
+
+               <div class="cont-info right">
+                <p><b>Contact:</b> Coffee Cup Café Office<br> <!-- Contact Information for the user -->
+                <b>Office Location:</b> 80 Water Street<br>
+                <b>Store Location:</b> 170 Main Street<br>
+                <b>Telephone Us:</b> 1 (800) 755 - 1800<br>
+                <b>Fax Address:</b> +1 (314) 123-4567 <br>
+                <b>Email Us:</b> info@coffeecupcafé.ca<br>
+                <b>Website:</b> www.coffeecupcafé.ca <br>
+                <br>
+                <i>Give us your feedback, Thank you!</i></p>
+                   </div>
+                   
+                  <!-- Customer comments with javascript to load more comments -->
+                   <div class="spacebox2"><ul><li><b>Bold</b> flavors and <b>bold</b> design come together seamlessly at this trendy cafe. The eclectic menu caters to diverse tastes, ensuring there's something for everyone to enjoy. - Noah Kim</li></ul>
+                    <button id="loadButton">Load More Comments</button></div></div> <!-- Javascript Button to load more comments-->
+                    <div class="spacebox2"><p id="more"> </p></div>
+    
+
+
+    </main>
+
+    <footer>
+        <div class="footerbox">
+        <h3 style="font-family:verdana">
+            <a href="#Top">Top of Page</a><br> <!-- A link to bring you back to the top of the page -->
+         </h3> 
+        </div>
+        <div class="footerbox"><img src="../Photos/coffeecupcafe1.jpg"></div> <!-- Footer Logo -->
+        <div class="footerbox"><p style="font-family:verdana">Copyright© Stephen Barnes & Lianne Campbell 2024</p></div>
+    </footer>
+
+<!-- Javascripts to load for use -->
+<script src="../Pages/script.js"></script> <!-- JS Script to enable more comments-->
+<script id="comment" src="../Pages/comment.js"></script> <!-- Extra comments for use in JS-->
+
+</body>
+</html>

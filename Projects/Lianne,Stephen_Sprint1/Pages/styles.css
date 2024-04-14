@@ -1,0 +1,227 @@
+/* styles.css */
+
+body {  /* Main Body color and margin */
+    margin: 35px;
+    font-family: Arial, sans-serif;
+    background-color: lightblue;
+}
+
+nav {   /* Box for navigation */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: lightblue;
+    padding: 10px;
+}
+
+nav a {  /* Edited Navigational Links */
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+nav a:hover {  /* Highlights hovered on link */
+    background-color: white;
+}
+
+.rounded-image {
+    border-radius: 50%; /* Makes the image rounded */
+    margin-top: 5px; /* Adjust spacing between links and images */
+}
+
+.info-box {    /* Main title - logo */
+    width: 590px;
+    height: 150px; 
+    border-radius: 10px;
+    padding: 10px;
+    float: left; 
+    margin-right: 30px;
+    margin-left: 30px;
+    font-family: cursive;
+    font-size: 60px;
+}
+
+
+.center {
+    text-align: center;  /* Center Align */
+  }
+
+.logo {  /* Logo for Cafe */
+    width: 500px;
+    height: 150px; 
+    border-radius: 10px;
+}
+
+.navcontainer {   /* Container with flex */
+    display: flex;
+    align-items:right;
+    justify-content: flex-end;
+    padding-right: 4px;
+  }
+
+  .navcircle { /* Boxes(circles) for Pictures with border radius in Nav */
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 18px;
+    margin-left: 16px;
+    margin-top: 5px;
+    object-fit: contain;
+
+    
+}
+
+.navthumb { /* Pictures with border radius in Nav */
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
+}
+
+.spacebox{  /* Provides Spacing */
+    display: flex; 
+    justify-content: center;
+    font-size: 20px;
+   
+}
+
+.spacebox2{  /* Provides Spacing */
+    display: flex; 
+    justify-content: center;
+    font-size: 18px;
+    margin-top: 20px;
+   
+}
+  
+.mainbox{      /* Main content with flex, spacing and padding */
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+   
+}
+
+.mainthumb1 { /* Pictures with border radius */
+    border-radius: 10%;
+    height: 300px;
+    width: 160px;
+    margin-left: 25px;   
+}
+
+.mainthumb2 { /* Pictures with border radius */
+    border-radius: 10%;
+    height: 300px;
+    width: 300px; 
+    margin-left: 25px;  
+}
+
+.cont-title {    /* Title with Padding */
+    width: 180px;
+    height: 68px;
+    padding-right: 20px;
+    padding-left: 20px;
+  
+}
+.cont-info {  /* Boxes to contain contact info */
+    display: flex;
+    float: bottom;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-bottom: 400px;
+    font-size: 12px;
+}
+
+.right{
+    float: right;  /* Float to the right*/
+    padding-right: 50px; 
+}
+
+.left{
+    float: left;   /* Float to the left*/
+    padding-left: 50px; 
+}
+
+
+.menu-container {
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: center; /* Center items horizontally */
+    padding: 10px;
+    float: left;
+    margin-left: 50px;
+}
+
+.menu-items {
+    display: flex;
+    flex-direction: column; /* Display items vertically */
+    align-items: flex-start; /* Align items to the start (left) */
+    width: 100%; /* Take up the full width */
+   
+}
+
+.menu-item {
+    margin-bottom: 10px; /* Add space between each menu item */
+}
+
+.menu-item-image {
+    margin-left: 10px;
+    border:#000000 1px solid;
+}
+
+.submit-section {
+    width: 100%; /* Take up the full width */
+    margin-top: 10px; /* Add space between menu items and submit button */
+    text-align: center;
+}
+
+.quantity-section {  /* Adds margin */
+    margin-left: 20px;
+}
+
+/* Optional styling for checkboxes */
+input[type="checkbox"] {
+    margin-right: 5px;
+}
+
+.menuitem{  /* Boxes for each indiviual menu item */
+    width:250px;
+    height:310px;
+    border:#000000 1px solid;
+    padding:20px;
+    text-align: center;
+    background-image: linear-gradient(lightblue,lightgrey);;
+}
+
+.menupic{   /* Picture with border radius */
+    width:150px;
+    height:150px;  
+    border-radius: 30%
+}
+
+.menu-item:hover {   /* Highlights when hovering over an item */
+    background-color: #f0f0f0;
+    cursor: pointer;
+}
+
+.aboutbox{  /* Information box with flex and spacing */
+    display: flex;
+    justify-content: space-evenly;
+    padding-right: 50px;
+    padding-left: 50px;
+}
+
+.footerbox{  /*Adds a footer at the bottom of the page*/
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 12px;
+
+}
+
+footer a {  /*Adjusts links in a footer at the bottom of the page*/
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+footer a:hover {  /*Adjusts links when hovered over*/
+    background-color: white;
+}

@@ -1,0 +1,116 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(rgba(23, 35, 196, 0.808), rgba(109, 230, 248, 0.877));
+}
+
+.mainbox {
+  width: 1000px;
+  height: 2000px;
+  background-color: white;
+  margin: 100px;
+  text-align: left;
+  border: solid black 1px;
+
+}
+
+.titlebox {
+  width: 400px;
+  height: 40px;
+  background-color: white;
+  padding: 8px;
+  float: left;
+
+}
+
+.menubox {
+  width: 500px;
+  height: 40px;
+  background-color: white;
+  padding: 8px;
+  text-align: right;
+  float: left;
+  margin-left: 98px;
+}
+
+nav a:link {
+  color: black;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+nav a:visited {
+  color: black;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+nav a:hover {
+  color: white;
+  background-color: black;
+  font-family: Verdana;
+}
+
+main {
+  background-color: white;
+  padding-top: 10px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+.mainaboutbox {
+  width: 880px;
+  height: 800px;
+  background-color: white;
+  margin: 10px;
+  float: left;
+
+}
+.mainaboutpic {
+  width: 900px;
+  height:400px;
+  background-color: white;
+  margin: 10px;
+ 
+}
+
+
+.lightertext {
+  color: gray;
+}
+
+.mainmenubox {
+  width: 380px;
+  height: 450px;
+  margin: 10px;
+  float: left;
+}
+
+.footerbox {
+  width: 1000px;
+  height: 100px;
+  background-color: rgba(42, 62, 247, 0.76); 
+  border: solid black 1px;
+}
+
+footer a:link {
+  color: black;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+footer a:visited {
+  color: black;
+  text-decoration: none;
+  font-family: Verdana;
+}
+
+footer a:hover{
+  color: white;
+  background-color: black;
+  font-family: Verdana;
+}

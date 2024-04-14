@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- External stylesheet links -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <!-- Preconnect links for Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Google Fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Links -->
+    <nav> 
+        <a href="./index.html" class="bungee-spice-regular">Home</a>
+        <a href="./projects.html" class="bungee-spice-regular">Projects</a>   
+        <a href="./about.html" class="bungee-spice-regular">About Me</a> 
+    </nav>
+    <main>
+        <!-- Section for displaying projects -->
+        <h1>My Projects</h1>
+        <div class="mainbox4">
+            <p>Here is a preview of a few projects completed in the past!</p><br/>
+            <!-- Project buttons with links -->
+            02/21/2024 <button><a href="./Projects/Lianne,Stephen_Sprint1/Pages/index.html"><b>Coffee Cup Cafe</b></a></button><br/><br/>
+            02/08/2024 <button><a href="./Projects/Lianne_QAP1/index.html"><b>Painted Bunting</b></a></button><br/><br/>
+            10/05/2023 <button><a href="./Projects/WebDesignSprint1/Index.html"><b>Generative AI</b></a></button>
+        </div>
+        <div class="mainbox4">
+            <!-- Section for displaying coding environment -->
+            <p>Coding was done using Visual Studio Code</p>
+            <div class="pic-container"><img src="./Pictures/kisspng-visual-studio-code-computer-icons-microsoft-visual-coding-5abef0f9449f72.1670332915224629692811.png" alt="Project Image" id="picture"></div>
+        </div> 
+        <div class="mainbox">
+            <!-- Section for GitHub link -->
+            <p>If you would like to view a full overview of my projects, please visit my GitHub link!</p>
+            <button><a href="https://github.com/LianneCampbell"><b>Link to GitHub</b></a></button>
+        </div>
+    </main>
+    <footer>
+        <!-- Footer with Easter Egg hint and signature -->
+        <p class="bungee-spice-regular">Find the hidden Easter Egg! Click around the pages to find the surprise.</p>
+        <p class="footsignature">&copy; Lianne Campbell 2024</p>
+    </footer>
+    <script>
+        // Define an array of image URLs
+        const imageUrls = [
+          './Pictures/kisspng-visual-studio-code-computer-icons-microsoft-visual-coding-5abef0f9449f72.1670332915224629692811.png',
+          './Pictures/image-from-rawpixel-id-7619193-png.png',
+        ];
+    
+        // Get the image element
+        const picture = document.getElementById('picture');
+    
+        let currentIndex = 0;
+    
+        // Function to change the image when clicked
+        function changeImage() {
+          // Increment the index, reset to 0 if it exceeds the array length
+          currentIndex = (currentIndex + 1) % imageUrls.length;
+    
+          // Update the image source
+          picture.src = imageUrls[currentIndex];
+        }
+    
+        // Add click event listener to the image
+        picture.addEventListener('click', changeImage);
+    </script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+body {
+    /* Background image for the entire body */
+    background: url('./Pictures/image-from-rawpixel-id-593171-jpeg.jpg');
+    background-size: 2000px 1200px; /* Set background size */
+    color: white; /* Set text color */
+}
+
+.bodyother {
+    /* Background image for specific elements */
+    background: url('./Pictures/image-from-rawpixel-id-593171-jpeg.jpg');
+    background-size: 2000px 1200px; /* Set background size */
+    color: white; /* Set text color */
+}
+
+header {
+    /* Header styles */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: calc(8px + 2vmin);
+    text-align: center;
+}
+
+nav {
+    /* Navigation styles */
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 20px;
+    font-size: calc(4px + 2vmin);
+    color: white;
+    background-color: rgba(21, 21, 21, 0.889);
+}
+
+nav a { /* Navigation link styles */
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+}
+
+nav a:hover { /* Hover effect for navigation links */
+    background-color: aqua;
+}
+
+h1 {
+    /* Heading 1 styles */
+    font-family: "Sofia", sans-serif;
+}
+
+main {
+    /* Main section styles */
+    padding: 60px;
+    margin: 30px;
+    background-color: rgba(21, 21, 21, 0.889);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 100;
+    font-style: italic;
+    font-size: calc(12px + 1vmin);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Different mainbox sizes */
+.mainbox {
+    height: 500px;
+    width: 280px;
+}
+
+.mainbox1 {
+    height: 500px;
+    width: 500px;
+}
+
+.mainbox2 {
+    height: 500px;
+    width: 800px;
+}
+
+.mainbox3 {
+    height: 200px;
+    width: 300px;
+}
+
+.mainbox4 {
+    height: 500px;
+    width: 200px;
+    margin-top: 20px;
+}
+
+/* Profile picture styles */
+.profile-pic {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 390px;
+    height: 390px;
+    margin-top: 20px;
+}
+
+/* Additional information styles */
+.moreinfo {
+    font-style: italic;
+    font-size: 16px;
+}
+
+ul {
+    /* Unordered list styles */
+    list-style: none;
+    font-style: italic;
+    font-size: 16px;
+    padding-right: 10px;
+}
+
+.bungee-spice-regular {
+    /* Font style */
+    font-family: "Bungee Spice", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+button {
+    /* Button styles */
+    background: url('./Pictures/dcsljlm-72e01a47-04b3-4b80-a840-2070d9e3054f.jpg');
+    background-size: 140px 90px; /* Set background size */
+    color: black; /* Set text color */
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+button a { /* Button link styles */
+    text-decoration: none;
+    color: black;
+    padding: 8px 16px;
+}
+
+button a:hover { /* Hover effect for button links */
+    color: white;
+}
+
+.image-container {
+    /* Container for rotating images */
+    width: 640px;
+    height: 420px;
+    text-align: center;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Image styles */
+.image-container img {
+    width: 70%;
+    height: auto;
+}
+
+.pic-container {
+    /* Container for project images */
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+/* Project image styles */
+.pic-container img {
+    width: 70%;
+    height: auto;
+}
+
+footer {
+    /* Footer styles */
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    border-radius: 15px;
+    margin: 5px;
+    font-size: calc(4px + 2vmin);
+    color: white;
+    background-color: rgba(21, 21, 21, 0.889);
+}
+
+.footsignature {
+    /* Signature font style */
+    font-family: "Sofia", sans-serif;
+}
